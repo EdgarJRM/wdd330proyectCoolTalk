@@ -1,0 +1,327 @@
+/*
+1. Posicionamiento --> static, absolute, relative, fixed.
+2. Modelo de caja (Box model) --> margin, border, padding, content.
+3. Tipografía --> tipos, tamaños de fuente, etc.
+4. Estilos visuales --> box-shadow, border-radius, gradient, etc.
+5. Otros --> misceláneos, reglas CSS y más.
+*/
+
+:root {
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #282623;
+    --black: #201e1c;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Hind', sans-serif;
+}
+
+/*Menu*/
+.navigation {
+	list-style: none;
+    background-color: #05A503;
+	box-shadow: 0 0 10px #333;
+	justify-content: center;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+.menu::before {
+	content: "≡";
+	font-size: 2rem;
+}
+
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: black;
+}
+.responsive li {
+	display: block;
+}
+.responsive a.menu::before {
+	content: "X";
+}
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 324px;
+    min-height: 200px;
+    text-align: center; 
+}
+header img {
+    width: 150px;
+    padding: 10px;
+    align-self: center;
+}
+
+.header-menu-bar {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    min-width: 288px;
+    min-height: 150px;
+    text-align: center;
+    align-self: center;
+}
+header p {
+    padding-top: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+    background-color: #05A503;
+    padding-bottom: 20px;
+}
+header .header-button {
+    position: absolute;
+    left: calc(50% - 118px);
+    top: 170px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    /*Sombra*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+.header-button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 1px;
+}
+.header-button:hover {
+    background-color: #BC8724;
+}
+
+/*main*/
+
+main .banner-home{
+    width: 100%;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+/*Products, Home page*/
+.products{
+    display: block;
+}
+.product_image{
+    position: relative
+}
+.product_image img{
+    width: 100%;
+}
+
+.product-button{
+    position: absolute;
+    left: 15%;
+    bottom:  40px;
+    display: block;
+    margin-top: 35px;
+    width: 70%;
+    padding: 15px;
+    height: 48px;
+    background-color: #07BE91;
+    /*Sombra*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--off-white);
+}
+
+/*----SECTION INFO----????????????????????????????????????????????????????????*/
+main .infoWeather{
+    text-align: center;
+    margin: 0 auto;
+    margin: 40px;
+}
+main .info{
+    display: block;
+
+}
+
+/*information Coastal Area"*/
+.infoCoastalArea{
+    width: 100%;
+    min-width: 320px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.20)), url("https://edgarjrm.github.io/wdd230/bountifulFoods/images/hollywood1.jpg");
+    background-color: #BC8724;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.infoCoastTitle{
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+}
+.infoCoastBody{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+}
+
+/*GALLERY*/
+.gallery {
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+}
+.gallery h2{
+    padding: 20px;
+
+}
+.photo-gallery{
+    display: block;
+}
+.photo-gallery img{
+    padding: 15px;
+    min-width: 200px;
+}
+
+/*Secciones Drink Request*/
+.drinks_requested{
+    justify-content: center;
+    padding: 15px;
+    background-color: #07BE91;
+    text-align: center;
+    font-size: 22px;
+    font-style:italic;
+}
+
+/*Secciones Footer*/
+footer div {
+    display: block;
+    width: 100%;
+    justify-content: center;
+    padding: 30px;
+    background-color: #BC8724;
+    text-align: center;
+}
+footer ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+footer article{
+    padding: 20px;
+}
+footer img {
+    max-width: 170px;
+}
+footer h2 {
+    padding-bottom: 15px;
+}
+.left li {
+    margin: 10px 0;
+}
+footer a {
+    text-decoration: none;
+    color: var(--just-white);
+}
+footer a:hover {
+    background-color: black;
+}
+footer p{
+    font-size: 20px;
+}
+body{
+    width: 100%;
+}
+.copyRight{
+    border-top: 2px dotted black;
+}
+
+
+/*-------------------------------------FRESH PAGE-----------------------------------------*/
+h1{
+    text-align: center;
+}
+.photo-gallery li{
+    padding-top: 40px;
+}
+#speakin1, #speakin2, #speakin3, #speakin4, #speakin5, #speakin6, #speakin7, 
+#speakin8, #speakin9, #speakin10{
+    font-size: 30px;
+    font-style: italic;
+}
+
+
+/*-------------------------------------About Us Page-----------------------------------------*/
+.infoAboutUs{
+    display: block;
+    text-align: center;
+}
+.infoAboutUs ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+    list-style: none;
+}
+.infoAboutUs div{
+    padding: 20px;
+}
+.banner-AboutUs{
+    width: 100%;
+}
+.aboutus, .objetive{
+    display: block;
+
+}
+.objetive{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.20)), url("https://edgarjrm.github.io/wdd230/bountifulFoods/images/banner_objetive.jpg");
+    background-color: #BC8724;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.aboutus div, .objetive article{
+    padding: 20px;
+    align-self: center;
+}

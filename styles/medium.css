@@ -1,0 +1,71 @@
+/*justando la sección de beneficios*/
+/*PRODUCT*/
+.products {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 100%;
+}
+
+/*Header*/
+header p{
+    font-size: 30px;
+}
+header img {
+    width: 210px;
+}
+
+/*MENU*/
+nav {
+    flex-direction: row;
+    font-size: 1.1rem
+}
+/*menu*/
+.navigation {
+    display: flex;
+}
+.navigation li {
+    display: block; /* change state in small view */
+    flex: 1 1 auto;
+}
+.navigation a {
+    text-align: center;
+}
+.navigation li:first-child {
+    display: none;
+}
+
+main .info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/*GALLERY*/
+.photo-gallery img{
+    width: 48%;
+}
+
+
+
+/*Footer*/
+footer div {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*-------------------------------------FRESH PAGE-----------------------------------------*/
+.infoDrink{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*-------------------------------------ABOUT US-----------------------------------------*/
+.aboutus{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.objetive{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

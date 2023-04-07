@@ -1,0 +1,18 @@
+.photo-gallery img{
+    width: 23%;
+}
+
+/*PRODUCT*/
+.products{
+    display: flex;   
+}
+.product_image {
+    width: 25%; 
+}
+
+
+/*-------------------------------------About Us Page-----------------------------------------*/
+.infoAboutUs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
