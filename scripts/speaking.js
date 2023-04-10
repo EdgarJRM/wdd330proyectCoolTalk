@@ -12,14 +12,14 @@ const playBtn10 = document.querySelector('.play10');
 
 const recognition = new window.webkitSpeechRecognition(); //crea una instancia del objeto SpeechRecognition
 
+
 recognition.onstart = function() {
-  console.log('La grabación de voz ha comenzado.');
   speakin1.innerHTML= 'La grabación de voz ha comenzado.';
 };
 
 recognition.onresult = function(event) {
   const resultado = event.results[0][0].transcript;
-  console.log('Resultado:', resultado); 
+
   speakin1.innerHTML= resultado; //muestra el resultado del reconocimiento de voz
 };
 
