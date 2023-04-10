@@ -19,7 +19,6 @@ recognition.onstart = function() {
 
 recognition.onresult = function(event) {
   const resultado = event.results[0][0].transcript;
-
   speakin1.innerHTML= resultado; //muestra el resultado del reconocimiento de voz
 };
 

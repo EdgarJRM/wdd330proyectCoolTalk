@@ -1,10 +1,4 @@
 /*justando la sección de beneficios*/
-/*PRODUCT*/
-.products {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    max-width: 100%;
-}
 
 /*Header*/
 header p{
@@ -40,11 +34,6 @@ main .info{
 }
 
 
-/*GALLERY*/
-.photo-gallery img{
-    width: 48%;
-}
-
 
 
 /*Footer*/
@@ -53,11 +42,6 @@ footer div {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-/*-------------------------------------FRESH PAGE-----------------------------------------*/
-.infoDrink{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 
 /*-------------------------------------ABOUT US-----------------------------------------*/
 .aboutus{

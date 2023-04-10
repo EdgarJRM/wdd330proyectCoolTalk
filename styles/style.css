@@ -139,37 +139,6 @@ main .banner-home{
     margin: 0 auto;
 }
 
-/*Products, Home page*/
-.products{
-    display: block;
-}
-.product_image{
-    position: relative
-}
-.product_image img{
-    width: 100%;
-}
-
-.product-button{
-    position: absolute;
-    left: 15%;
-    bottom:  40px;
-    display: block;
-    margin-top: 35px;
-    width: 70%;
-    padding: 15px;
-    height: 48px;
-    background-color: #07BE91;
-    /*Sombra*/
-    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--off-white);
-}
 
 /*----SECTION INFO----????????????????????????????????????????????????????????*/
 main .infoWeather{
@@ -205,32 +174,10 @@ main .info{
     color: rgb(0, 0, 0);
 }
 
-/*GALLERY*/
-.gallery {
+.phrases {
     text-align: center;
     padding: 20px;
     justify-content: center;
-}
-.gallery h2{
-    padding: 20px;
-
-}
-.photo-gallery{
-    display: block;
-}
-.photo-gallery img{
-    padding: 15px;
-    min-width: 200px;
-}
-
-/*Secciones Drink Request*/
-.drinks_requested{
-    justify-content: center;
-    padding: 15px;
-    background-color: #07BE91;
-    text-align: center;
-    font-size: 22px;
-    font-style:italic;
 }
 
 /*Secciones Footer*/
@@ -278,11 +225,9 @@ body{
 }
 
 
-/*-------------------------------------FRESH PAGE-----------------------------------------*/
-h1{
-    text-align: center;
-}
-.photo-gallery li{
+/*-------------------------------------Personal Introductions PAGE-----------------------------------------*/
+.text_practice li{
+    list-style: none;
     padding-top: 40px;
 }
 #speakin1, #speakin2, #speakin3, #speakin4, #speakin5, #speakin6, #speakin7, 
